@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_21_195058) do
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.string "icon"
-    t.datetime "created_at"
+    t.datetime "created_at", precision: nil
     t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_categories_on_user_id"
   end
@@ -34,8 +34,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_21_195058) do
   create_table "expenses", force: :cascade do |t|
     t.bigint "author_id", null: false
     t.string "name"
-    t.decimal "total_amount"
-    t.datetime "created_at"
+    t.decimal "amount"
+    t.datetime "created_at", precision: nil
     t.index ["author_id"], name: "index_expenses_on_author_id"
   end
 
