@@ -4,7 +4,7 @@ class Category < ApplicationRecord
   has_many :expenses, through: :category_expenses
 
   validates :name, presence: true, length: { minimum: 2 }
-  validates :icon, presence: true
+  validates :icon, url: true, presence: true
 
   def total_expenses
     expenses.sum(:amount)

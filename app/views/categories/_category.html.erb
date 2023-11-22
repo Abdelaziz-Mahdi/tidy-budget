@@ -6,7 +6,11 @@
 
   <p>
     <strong>Icon:</strong>
-    <%= image_tag category.icon, style: "height: 100px;" %>
+    <% if category.icon.match? URI::regexp(%w(http https)) %>
+      <%= image_tag category.icon, style: "height: 100px;" %>
+    <% else %>
+      <p>Invalid icon URL</p>
+    <% end %>
   </p>
 
   <p>
