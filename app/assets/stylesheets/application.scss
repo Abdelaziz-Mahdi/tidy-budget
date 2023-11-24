@@ -13,3 +13,54 @@
  *= require_tree .
  *= require_self
  */
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: font-url('ProximaNovaBold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: font-url('ProximaNovaLight.otf');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.main {
+  color: #3778c2;
+}
+
+.second {
+  color: #5fb523;
+}
+
+.t-one {
+  color: #434b54;
+}
+
+.t-two {
+  color: #545c67;
+}
+
+.t-three {
+  color: #86898e;
+}
+
+.t-four {
+  color: #989da3;
+}
+
+* {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}

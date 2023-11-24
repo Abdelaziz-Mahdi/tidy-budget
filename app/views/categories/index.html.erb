@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Categories</h1>
+
+<ul id="categories">
+  <% @categories.each do |category| %>
+  <li>
+    <%= link_to category_expenses_path(category.id) do %>
+      <%= render category %>
+    <% end %>
+  <% end %>
+  </li>
+</ul>
+
+<%= link_to "Add a new category", new_category_path %>

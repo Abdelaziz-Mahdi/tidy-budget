@@ -1,0 +1,19 @@
+<div id="<%= dom_id category %>">
+  <p>
+    <strong>Name:</strong>
+    <%= category.name %>
+  </p>
+  <p>
+    <strong>Icon:</strong>
+    <% if category.icon.match? URI::regexp(%w(http https)) %>
+      <%= image_tag category.icon, style: "height: 100px;" %>
+    <% else %>
+      <p>Invalid icon URL</p>
+    <% end %>
+  </p>
+  <p>
+    <strong>Total Expenses:</strong>
+    <%= category.total_expenses %>
+  </p>
+
+</div>

@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Expenses</h1>
+<p>Total amount for <%= @category.name %> category: $<%= @total_expenses %>
+</p>
+<ul id="expenses">
+  <li>
+    <% @expenses.each do |expense| %>
+      <%= render expense %>
+    <% end %>
+  </li>
+</ul>
+
+<%= link_to 'New Expense', new_expense_path %>
+<%= link_to 'Back', categories_path %>
