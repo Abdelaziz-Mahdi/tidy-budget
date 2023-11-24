@@ -2,13 +2,14 @@
 
 <h1>Categories</h1>
 
-<div id="categories">
+<ul id="categories">
   <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
+  <li>
+    <%= link_to category_expenses_path(category.id) do %>
+      <%= render category %>
+    <% end %>
   <% end %>
-</div>
+  </li>
+</ul>
 
-<%= link_to "New category", new_category_path %>
+<%= link_to "Add a new category", new_category_path %>

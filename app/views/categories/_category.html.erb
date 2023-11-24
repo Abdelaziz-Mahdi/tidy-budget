@@ -3,7 +3,6 @@
     <strong>Name:</strong>
     <%= category.name %>
   </p>
-
   <p>
     <strong>Icon:</strong>
     <% if category.icon.match? URI::regexp(%w(http https)) %>
@@ -12,20 +11,9 @@
       <p>Invalid icon URL</p>
     <% end %>
   </p>
-
   <p>
     <strong>Total Expenses:</strong>
     <%= category.total_expenses %>
-  </p>
-
-  <p>
-    <strong>Created at:</strong>
-    <%= category.created_at %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= category.user_id %>
   </p>
 
 </div>
