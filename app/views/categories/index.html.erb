@@ -1,10 +1,12 @@
+
+
+<%= render partial: 'shared/nav', locals: { title: 'Categories', nav: 'menu', action: '' } %>
 <p style="color: green"><%= notice %></p>
+<%= button_to 'Sign Out', destroy_user_session_path, method: :delete %>
 
-<h1>Categories</h1>
-
-<ul id="categories">
+<ul id="categories" class="container bg-five pt-2">
   <% @categories.each do |category| %>
-  <li>
+  <li class="bg-white mt-4 p-2">
     <%= link_to category_expenses_path(category.id) do %>
       <%= render category %>
     <% end %>
@@ -12,4 +14,9 @@
   </li>
 </ul>
 
-<%= link_to "Add a new category", new_category_path %>
+
+<nav class="sticky-bottom mt-auto second p-3">
+  <div class="border border-light text-center">
+    <%= link_to "Add a new category", new_category_path, class:"navbar-brand text-white" %>
+  </div>
+</nav>
