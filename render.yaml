@@ -1,7 +1,7 @@
 databases:
   - name: tidybudget
     databaseName: tidybudget
-    user: postgres
+    user: mahdidb
 
 services:
   - type: web
