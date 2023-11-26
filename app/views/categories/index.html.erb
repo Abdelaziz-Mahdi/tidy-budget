@@ -2,7 +2,6 @@
 
 <%= render partial: 'shared/nav', locals: { title: 'Categories', nav: 'menu', action: '' } %>
 <p style="color: green"><%= notice %></p>
-<%= button_to 'Sign Out', destroy_user_session_path, method: :delete %>
 
 <ul id="categories" class="container bg-five pt-2">
   <% @categories.each do |category| %>
