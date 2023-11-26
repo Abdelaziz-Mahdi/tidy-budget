@@ -1,9 +1,4 @@
-<h1>New category</h1>
-
-<%= render "form", category: @category %>
-
-<br>
-
-<div>
-  <%= link_to "Back", :back %>
+<div class="vh-100 position-relative">
+  <%= render partial: 'shared/nav', locals: { title: 'New category', nav: 'back', action: '' } %>
+  <%= render "form", category: @category %>
 </div>
