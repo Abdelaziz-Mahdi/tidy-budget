@@ -1,9 +1,4 @@
-<h1>New expense</h1>
-
-<%= render "form", expense: @expense %>
-
-<br>
-
-<div>
-  <%= link_to "Back", :back %>
+<div class="vh-100 position-relative">
+  <%= render partial: 'shared/nav', locals: { title: 'New expense', nav: 'back', action: '' } %>
+  <%= render "form", expense: @expense %>
 </div>

@@ -1,19 +1,19 @@
-<div id="<%= dom_id category %>">
-  <p>
-    <strong>Name:</strong>
+<div class="row" id="<%= dom_id category %>">
+
+  <% if category.icon.match? URI::regexp(%w(http https)) %>
+    <%= image_tag category.icon, class:"w-25" %>
+  <% else %>
+    <p class="w-25">Invalid icon URL</p>
+  <% end %>
+
+  <p class="mt-2 w-50">
     <%= category.name %>
   </p>
-  <p>
-    <strong>Icon:</strong>
-    <% if category.icon.match? URI::regexp(%w(http https)) %>
-      <%= image_tag category.icon, style: "height: 100px;" %>
-    <% else %>
-      <p>Invalid icon URL</p>
-    <% end %>
-  </p>
-  <p>
-    <strong>Total Expenses:</strong>
+
+  <p class="mt-2 w-25">
+      <strong>
     <%= category.total_expenses %>
+    </strong>
   </p>
 
 </div>

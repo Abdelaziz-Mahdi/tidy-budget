@@ -1,22 +1,11 @@
-<div id="<%= dom_id expense %>">
-  <p>
-    <strong>Author:</strong>
-    <%= expense.author_id %>
-  </p>
+<div class="row pb-2" id="<%= dom_id expense %>">
 
-  <p>
-    <strong>Name:</strong>
+  <div class="mt-2 w-50">
     <%= expense.name %>
-  </p>
-
-  <p>
-    <strong>Amount:</strong>
-    <%= expense.amount %>
-  </p>
-
-  <p>
-    <strong>Created at:</strong>
-    <%= expense.created_at %>
-  </p>
-
+  </div>
+  <div class="mt-2 w-25">
+  </div>
+  <div class="mt-2 w-25 fw-bold">
+      $<%= expense.amount %>
+  </div>
 </div>
