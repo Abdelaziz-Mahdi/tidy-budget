@@ -15,6 +15,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [:movie_camera: Project Presentation](#project-presentation)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -31,7 +33,7 @@
 
 # 📖 Tidy Budget <a name="about-project"></a>
 
-**Tidy Budget App** Tidy Budget app is a mobile web application where you can manage your budget, you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+**Tidy Budget App** The Tidy Budget app is a mobile web application where you can manage your budget, you have a list of transactions associated with a category so that you can see how much money you spent and on what.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -61,6 +63,26 @@ a Ruby on Rails application that allows the user to:
 - Register and log in, so that the data is private to them.
 - Introduce new transactions associated with a category.
 - See the money spent on each category.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Project Presntation -->
+
+## :movie_camera: Project Presentation <a name="project-presentation"></a>
+
+Walking through portfolio outline.
+
+- [Project Presentation Link](https://www.loom.com/share/c76dabbdb7e640e7b81b7f32079f5eb4?sid=46eecc2f-d356-4502-893a-e3a838bfbefd)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://tidybudget.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
