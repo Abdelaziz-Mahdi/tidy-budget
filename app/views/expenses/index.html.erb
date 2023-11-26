@@ -1,15 +1,21 @@
-<p style="color: green"><%= notice %></p>
+<%= render partial: 'shared/nav', locals: { title: 'Expenses', nav: 'category', action: '' } %>
+<div style="color: green"><%= notice %></div>
 
-<h1>Expenses</h1>
-<p>Total amount for <%= @category.name %> category: $<%= @total_expenses %>
-</p>
-<ul id="expenses">
-  <li>
-    <% @expenses.each do |expense| %>
+<div class="bg-white p-2 pt-3 pb-3 d-flex justify-content-between">
+  <div class="t-three">Total amount for <%= @category.name %> category</div>
+  <strong>$<%= @total_expenses %></strong>
+</div>
+
+<ul id="expenses" class="container bg-five pt-2">
+  <% @expenses.each do |expense| %>
+    <li class="bg-white mt-2 p-2">
       <%= render expense %>
-    <% end %>
-  </li>
+    </li>
+  <% end %>
 </ul>
 
-<%= link_to 'New Expense', new_expense_path %>
-<%= link_to 'Back', categories_path %>
+<nav class="sticky-bottom mt-auto second p-3">
+  <div class="border border-light text-center">
+    <%= link_to "Add a new expense", new_expense_path, class:"navbar-brand text-white" %>
+  </div>
+</nav>
