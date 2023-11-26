@@ -2,7 +2,6 @@ databases:
   - name: tidybudget
     databaseName: tidybudget
     user: mahdidb
-    plan: free
 
 services:
   - type: web
