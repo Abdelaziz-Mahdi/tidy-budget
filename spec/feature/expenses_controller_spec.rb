@@ -20,5 +20,4 @@ RSpec.describe 'MovementsControllers', type: :feature do
       expect(page).to have_http_status(:success)
     end
   end
-
 end
