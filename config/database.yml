@@ -81,6 +81,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: tidybudget
-  username: tidybudget
+  database: tidy_budget_production
+  username: tidy_budget
   password: <%= ENV["TIDY_BUDGET_DATABASE_PASSWORD"] %>
