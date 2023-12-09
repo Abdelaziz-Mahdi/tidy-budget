@@ -13,9 +13,10 @@
   </li>
 </ul>
 
-
 <nav class="sticky-bottom mt-auto second p-3">
-  <div class="border border-light text-center">
-    <%= link_to "Add a new category", new_category_path, class:"navbar-brand text-white" %>
+  <div class="border border-light">
+    <%= link_to new_category_path, class: "text-center" do %>
+      <div class="navbar-brand text-white">Add a new category</div>
+    <% end %>
   </div>
 </nav>
